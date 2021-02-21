@@ -1,5 +1,5 @@
 * {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Helvetica, "Lucida Grande", sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -7,26 +7,35 @@ body {
   background-color: fff;
 }
 header {
-  height: 400px;
+  height: 450px;
   width: 100%;
   border: red 2px solid;
   display: block;
-  background-color: pink;
-  background-image: url();
+  position: relative;
+}
+.circle-img-1 {
+  margin-top: 90px;
+  margin-left: 40px;
+  position: absolute;
 }
 
+.circle-img-1 img {
+  border: white 10px solid;
+  border-radius: 50%;
+  width: 30%;
+}
 ul {
   list-style-type: none;
 }
 
 nav {
-
+  background-color: wheat;
 }
 
 nav li {
-  color: blue;
-  margin: 15px;
-  padding: 10px;
+  color: rgb(20, 63, 99);
+  margin-right: 25px;
+  padding-bottom: 5px;
   font-size: 20px;
   cursor: pointer;
   display: inline-block;
@@ -34,62 +43,88 @@ nav li {
 }
 
 nav li:hover {
-  border-bottom: blue 2px solid;
+  color: rgb(201, 97, 97);
+  border-bottom: rgb(201, 97, 97) 2px solid;
 }
 
-.circle-img-1 img {
-  border: springgreen 2px solid;
-  border-radius: 50%;
-  width: 35%;
-}
-
-h1 {
-
-
-}
-
-.header-bg img {
-  width: 100%;
-  margin-top: 0;
-  opacity: 65%;
-
-
-}
-section {
-  border:royalblue 2px solid;
-  margin: 0;
+.content a {
+  color: rgb(20, 63, 99);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: lighter;
+  text-decoration: none;
   padding: 10px;
+}
+
+.content li {
+  color: rgb(201, 97, 97);
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 50px;
+}
+.header-bg {
+  height: 400px;
+  width: 100%;
+  background-image: url("../images/horseshoe.jpg");
+  background-size: cover;
+  background-position: center;
   display: block;
+  margin-bottom: auto;
+}
+
+h2 {
+  color: rgb(201, 97, 97);
+  font-weight: lighter;
+}
+
+section {
+  border: rgb(37, 111, 172) 2px solid;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  display: flex;
 }
 
 .card {
-  border: aquamarine 2px solid;
-  margin: 10px;
-  padding: 5px;
-  width: 30%;
-  height: 200px;
-  display: inline-block;
+  border-right: rgb(201, 97, 97) 7px solid;
+  min-width: 15%;
+  min-height: 200px;
   text-align: right;
-
+  float: left;
+  padding-right: 15px;
 }
+
 .content {
-  border: rgb(18, 68, 51) 2px solid;
-  margin: 2%;
-  height: 200px;
-  width: 80%;
-  display: inline-block;
+  border: springgreen 2px solid;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.big-card img {
-  margin: 2%;
-  width: 60%;
-  border: red 5px solid
+.bg-color {
+  background-color: rgb(201, 97, 97) 7px;
+}
+.content img {
+  width: 95%;
 }
 
-.circle-img-2 img {
-  margin: 5%;
-  width: 30%;
-  border: green 5px solid;
-  border-radius: 50%;
+.img-1 {
+  flex: 20;
+  flex-wrap: wrap;
+}
 
+.img-2,
+.img-3,
+.img-4 {
+  flex: 15;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: rgb(20, 63, 99);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: lighter;
+  text-decoration: none;
 
 }
