@@ -9,7 +9,7 @@ body {
 header {
   height: 450px;
   width: 100%;
-  border: red 2px solid;
+  /* border: red 2px solid; */
   display: block;
   position: relative;
 }
@@ -78,7 +78,7 @@ h2 {
 }
 
 section {
-  border: rgb(37, 111, 172) 2px solid;
+  /* border: rgb(37, 111, 172) 2px solid; */
   width: 95%;
   height: auto;
   margin: auto;
@@ -96,28 +96,25 @@ section {
 }
 
 .content {
-  border: springgreen 2px solid;
-  padding: 10px;
+  /* border: springgreen 2px solid; */
+  padding: 25px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
-.bg-color {
-  background-color: rgb(201, 97, 97) 7px;
-}
+
 .content img {
   width: 95%;
 }
 
 .img-1 {
-  flex: 20;
-  flex-wrap: wrap;
+flex: 2 1 0;
 }
 
 .img-2,
 .img-3,
 .img-4 {
-  flex: 15;
-  flex-wrap: wrap;
+  flex: 1 1 0;
 }
 
 .footer a {
