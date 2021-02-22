@@ -14,7 +14,7 @@ header {
   position: relative;
 }
 .circle-img-1 {
-  margin-top: 90px;
+  margin-top: 150px;
   margin-left: 40px;
   position: absolute;
 }
@@ -24,16 +24,27 @@ header {
   border-radius: 50%;
   width: 30%;
 }
+
+.header-bg {
+  height: 395px;
+  width: 100%;
+  background-image: url("../images/horseshoe.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-bottom: auto;
+}
+
+nav {
+}
+
 ul {
   list-style-type: none;
 }
 
-nav {
-  background-color: wheat;
-}
-
 nav li {
   color: rgb(20, 63, 99);
+  margin-top: 15px;
   margin-right: 25px;
   padding-bottom: 5px;
   font-size: 20px;
@@ -62,15 +73,6 @@ nav li:hover {
   font-weight: lighter;
   line-height: 50px;
 }
-.header-bg {
-  height: 400px;
-  width: 100%;
-  background-image: url("../images/horseshoe.jpg");
-  background-size: cover;
-  background-position: center;
-  display: block;
-  margin-bottom: auto;
-}
 
 h2 {
   color: rgb(201, 97, 97);
@@ -88,7 +90,7 @@ section {
 
 .card {
   border-right: rgb(201, 97, 97) 7px solid;
-  min-width: 15%;
+  min-width: 150px;
   min-height: 200px;
   text-align: right;
   float: left;
@@ -97,25 +99,59 @@ section {
 
 .content {
   /* border: springgreen 2px solid; */
+  width: 80%;
   padding: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center space-evenly;
+
 }
 
-.content img {
-  width: 95%;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.img-1 {
-flex: 2 1 0;
+.work_cards {
+  transition: .5s ease;
+  opacity: 100;
+  text-align: center;
 }
 
-.img-2,
-.img-3,
-.img-4 {
-  flex: 1 1 0;
+.hover-me {
+  cursor: grab;
+  text-decoration: none;
+  position: relative;
 }
+
+.hover-me;:hover::before{
+  cursor: grab;
+  text-decoration: none;
+}
+
+.hover-me;:hover::after{
+  cursor: grab;
+  text-decoration: none;
+}
+
+.big_proj {
+  width: 100%;
+  order: 1;
+
+}
+
+.sm_proj1, .sm_proj2, .sm_proj3 {
+  width: 29%;
+  display: inline;
+  order: 2;
+  border-radius: 50%;
+  margin: 10px;
+  justify-content: center;
+ }
 
 .footer a {
   color: rgb(20, 63, 99);
