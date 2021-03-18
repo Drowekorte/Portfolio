@@ -5,7 +5,7 @@
 :root {
   --dark: rgb(20, 63, 99);
   --light: #fff;
-  --hover:  rgb(201, 97, 97);
+  --hover: rgb(201, 97, 97);
   --burnt-sienna: #e97451;
 }
 
@@ -25,17 +25,24 @@ header {
 }
 
 h1 {
-  color: var(--dark)
+  color: var(--dark);
 }
 
 h2 {
   color: var(--hover);
   font-weight: lighter;
 }
+
 p {
   font-size: 1.2rem;
   color: var(--dark);
   font-weight: lighter;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: var(--dark);
+  line-height: 2rem;
 }
 
 nav {
@@ -46,7 +53,7 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex; 
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -71,7 +78,7 @@ nav a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items:baseline;
+  align-items: baseline;
   justify-content: flex-start;
   width: 100%;
   margin-top: 100px;
@@ -93,7 +100,7 @@ nav a {
 
 .my_name {
   color: var(--dark);
-  background-color:  rgba(252, 253, 253, 0.5);
+  background-color: rgba(252, 253, 253, 0.5);
   display: flex;
   height: 20%;
   width: 35%;
@@ -119,7 +126,6 @@ nav a {
   font-weight: lighter;
   line-height: 40px;
 }
-
 
 section {
   /* border: rgb(37, 111, 172) 2px solid; */
@@ -158,17 +164,23 @@ section {
   margin-top: 20px;
 }
 
-.work_cards img:hover{
+.work_cards img:hover {
   box-shadow: 5px 5px 5px rgba(114, 113, 113, 0.5);
-  
 }
 
-.footer a {
+footer {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
   color: var(--dark);
   font-size: 20px;
   cursor: pointer;
   font-weight: lighter;
   text-decoration: none;
+  font-weight: 500;
 }
 
 @media all and (max-width: 986px) {
@@ -179,17 +191,17 @@ section {
     background-size: cover;
     background-position: center;
     margin-bottom: 5%;
-  } 
+  }
 
   nav {
   }
-  
+
   nav ul {
     width: 100%;
     display: block;
     background-color: var(--light);
   }
-  
+
   nav a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -210,7 +222,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items:baseline;
+    align-items: baseline;
     justify-content: flex-start;
     width: 100%;
     margin-top: 100px;
@@ -223,7 +235,7 @@ section {
 
   .my_name {
     color: var(--dark);
-    background-color:  rgba(252, 253, 253, 0.5);
+    background-color: rgba(252, 253, 253, 0.5);
     display: flex;
     height: 20%;
     width: 45%;
@@ -242,7 +254,6 @@ section {
   }
 
   .card {
-
     border-right: none;
     border-bottom: rgb(201, 97, 97) 7px solid;
     width: 100%;
@@ -253,13 +264,12 @@ section {
   }
 
   .content {
-
-  width: 100%;
-  min-height: 100px;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-}
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+  }
 
   .sm_proj1,
   .sm_proj2,
@@ -271,12 +281,11 @@ section {
 }
 
 @media all and (min-width: 500px) and (max-width: 985px) {
-
   .circle-img-1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items:baseline;
+    align-items: baseline;
     justify-content: flex-start;
     width: 100%;
     margin-top: 100px;
@@ -289,7 +298,7 @@ section {
 
   .my_name {
     color: var(--dark);
-    background-color:  rgba(252, 253, 253, 0.5);
+    background-color: rgba(252, 253, 253, 0.5);
     display: flex;
     height: 20%;
     width: 50%;
@@ -298,5 +307,4 @@ section {
     align-items: baseline;
     margin-left: -5px;
   }
-
 }
