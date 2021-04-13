@@ -65,7 +65,7 @@ nav li {
 
 nav li:hover {
   color: var(--hover);
-  border-bottom: var(--hover) 2px solid;
+
 }
 
 nav a {
@@ -185,7 +185,7 @@ footer a {
   font-weight: 500;
 }
 
-@media all and (max-width: 986px) {
+@media all and (min-width: 730px) and (max-width: 986px) {
   header {
     height: 300px;
     width: 100%;
@@ -216,9 +216,6 @@ footer a {
     text-align: center;
   }
 
-  nav li:hover {
-    border-bottom: none;
-  }
 
   .circle-img-1 {
     display: flex;
@@ -276,13 +273,32 @@ footer a {
   .sm_proj1,
   .sm_proj2,
   .sm_proj3 {
-    width: 90%;
+    width: 31%;
     border-radius: 50%;
     margin-top: 20px;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 985px) {
+@media all and (min-width: 500px) and (max-width: 729px) {
+  nav ul {
+    width: 100%;
+    display: block;
+    background-color: var(--light);
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px;
+  }
+
+  nav li {
+    color: var(--dark);
+    text-align: center;
+  }
+
+
   .circle-img-1 {
     display: flex;
     flex-direction: row;
@@ -309,4 +325,37 @@ footer a {
     align-items: baseline;
     margin-left: -5px;
   }
+  .sm_proj1,
+  .sm_proj2,
+  .sm_proj3 {
+    width: 85%;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  section {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  .card {
+    border-right: none;
+    border-bottom: rgb(201, 97, 97) 7px solid;
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .content {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+  }
 }
+
