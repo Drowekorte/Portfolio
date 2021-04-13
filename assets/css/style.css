@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  background-color: fff;
+  background-color: var(--light);
 }
 header {
   height: 450px;
@@ -46,12 +46,14 @@ p {
 }
 
 nav {
+  /* border: blue 2px solid; */
   display: block;
   height: auto;
   width: 100%;
 }
 
 nav ul {
+  /* border: blue 2px solid; */
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -274,7 +276,7 @@ footer a {
   .sm_proj1,
   .sm_proj2,
   .sm_proj3 {
-    width: 50%;
+    width: 90%;
     border-radius: 50%;
     margin-top: 20px;
   }
